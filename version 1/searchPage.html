@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt=""></a>
+        </div>
+        <div class="location">
+            <p id="nav_City"><i class="fa-thin fa-magnifying-glass"></i></p>
+        </div>
+        <div class="date">
+            <p id="nav_Date"><i class="fa-solid fa-calendar-days"></i> 12/03/25</p>
+        </div>
+        <div class="guest">
+            <p id="nav_Preferance"><i class="fa-solid fa-user"></i> Adult</p>
+        </div>
+        <div class="otherPages">
+            
+           
+            <button class="wish" id="wishp"> <i class="fa-solid fa-heart"></i> Wish Lists</button>
+            <div class="myAccount">
+                <p><a href="yourAccount.html">My Account</a></p>
+            </div>
+        </div>
+    </div>
+
+
+       <!-- navbar completed -->
+       <div id="center">
+
+        <div class="top">
+            <div class="navbar2">
+
+
+                <div class="price">
+
+                    <select id="price" onchange="handlePriceSort()">
+                        <option value="">select price</option>
+                        <option value="lth">Low to High</option>
+                        <option value="htl">High to Low</option>
+                    </select>
+                </div>
+
+                <div class="rating">
+                    <select name="" id="rating">
+                        <option value="--">select rating</option>
+                        <option value="lth">Low to High</option>
+                        <option value="htl">High to Low</option>
+                    </select>
+                </div>
+
+                <div class="location">
+                    <select name="" id="location" onchange="locationchange()">
+                        <option value="">select location</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Hydrabad">Hydrabad</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Delhi">Delhi</option>
+                    </select>
+                </div>
+
+                
+                <div class="filter">All filters</div>
+
+            </div>
+
+            <div id="left"> </div>
+        </div>
+        <!-- nav and left page are in same div and ccompleted here -->
+        <div id="right"></div>
+    </div>
+
+</body>
+
+</html>

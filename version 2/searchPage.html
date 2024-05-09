@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        #navbar {
+            width: 100%;
+            border: 1px solid #ddd8d8;
+            position: fixed;
+            top: 2px;
+            display: flex;
+            font-size: 14px;
+            font-family: HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif;
+            background-color: white;
+            align-items: center;
+        }
+
+        .logo {
+            width: 107px;
+            height: 55px;
+            border-right: 1px solid #ddd8d8;
+            text-align: center;
+
+        }
+
+        .logo>a>img {
+            height: 32px;
+            width: 59px;
+            margin-top: 10px;
+        }
+
+        .location {
+            width: 310px;
+        }
+
+        .date {
+            width: 310px;
+            border-right: 1px solid #ddd8d8;
+
+        }
+
+        .guest {
+            width: 180px;
+            border-right: 1px solid #ddd8d8;
+        }
+
+        /* .otherPages {
+            width: 800px;
+
+        } */
+
+        div>p>i {
+            color: #ddd8d8;
+            font-size: 18px;
+            font-family: HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif;
+            /* margin-right: 15px;
+            margin-left: 15px; */
+        }
+
+        /* #navbar>div {
+            padding: 10px;
+        } */
+
+        .otherPages {
+            display: flex;
+            width: 600px;
+            justify-content: flex-end;
+
+        }
+
+        .otherPages>.myAccount,
+        .otherPages>button {
+            font-size: 14px;
+            color: #6f6f6f;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        /* .otherPages>.myAccount>p>i {
+            font-size: 14px;
+            color: #6f6f6f;
+            margin-left: 10px;
+        } */
+
+        .otherPages>.myAccount>p>a {
+            text-decoration: none;
+            color: #6f6f6f;
+        }
+
+        .otherPages>button:hover {
+            background-color: #c9c9c9;
+        }
+
+        .otherPages>.wish>i {
+            color: #d43228;
+        }
+
+
+
+        /* nav  bar completed */
+
+        /* navbar2 start from here */
+        .navbar2 {
+            display: flex;
+            justify-content: space-between;
+            width: 750px;
+            height: 100px;
+            /* border: 1px solid black; */
+            margin-top: 100px;
+
+
+        }
+
+        .navbar2>div {
+            /* width: 30px; */
+            /* height: 30; */
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+        }
+
+        /* .location
+        {
+         
+        } */
+
+        .navbar2>div>select {
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 50px;
+            font-size: 15px;
+            background-color: #dfdfdf;
+            border: none;
+            ;
+
+        }
+
+        .navbar2>.rating>select {
+            margin-top: 50px;
+
+        }
+
+        .filter {
+            width: 850px;
+            height: 45px;
+            background-color: #dfdfdf;
+            border-radius: 50px;
+            font-size: 15px;
+            margin-top: 28px;
+            padding: 10px;
+            box-sizing: border-box;
+            /* border:2px solid red */
+        }
+
+
+        /* navbar2 completed here */
+        #center {
+            display: flex;
+            /* grid-template-columns:repeat(2,1fr) ; */
+            gap: 15px;
+            justify-content: space-between;
+
+        }
+
+        #left {
+            height: 1000px;
+            width: 800px;
+            /* border:2px solid yellow; */
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            gap: 15px;
+            margin-top: 30px;
+            /* position: absolute; */
+        }
+
+        #right {
+            height: 800px;
+            width: 45%;
+            /* border:2px solid red; */
+            /* display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto; */
+            gap: 15px;
+            margin-top: 100px;
+            position: fixed;
+            right: 2px
+        }
+
+        #outer {
+            width: 750px;
+            /* border: 2px solid red; */
+            margin-left: 20px;
+            display: flex;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-radius: 10px;
+        }
+
+        #inner1 {
+            width: 280px;
+            height: 250;
+            /* border: 2px solid black; */
+            display: flex;
+            border-radius: 10px;
+
+        }
+
+        #top_left {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            height: 30px;
+            /* margin-top: 5px; */
+            /* margin-bottom: 10px; */
+        }
+
+        /* #top_right{
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        }
+         */
+        #img1 {
+            height: 30px;
+            width: 30px;
+            /* border-radius: 50%; */
+        }
+
+        #img2 {
+            height: 30px;
+            width: 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 5px;
+            /* border-radius: 50%; */
+        }
+
+        #img2 :hover {
+            background-color: red;
+        }
+
+        #inner2 {
+            width: 470px;
+            height: 230px;
+            /* border: 2px solid green; */
+            display: block;
+            padding: 10px;
+            /* box-sizing: border-box; */
+            padding-bottom: 10px;
+        }
+
+        #image {
+            height: 250px;
+            width: 280px;
+            align-items: flex-start;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        #inner2_top {
+            height: 40px;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #inner2_middle {
+            height: 140px;
+            width: 100%;
+            /* border: 2px solid black; */
+            margin-left: 10px;
+        }
+
+        #line1 {
+            font-size: 10px;
+            color: gray;
+            /* margin-left: 10px; */
+        }
+
+        #line3 {
+            font-size: 20px;
+            /* line-height: 18px; */
+            font-family: 'HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif';
+            margin-top: -10px;
+            font-weight: bold;
+
+        }
+
+        #location {
+            font-size: 10px;
+            color: #6f6f6f;
+            margin-top: -18px;
+        }
+
+        #violet {
+            color: #6730ce;
+
+        }
+
+        #maroon {
+            color: maroon;
+
+        }
+
+        #inner2_bottom {
+            height: 40px;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            /* margin-left: 10px; */
+            /* margin-right: -10px; */
+            /* margin-bottom: 0px;
+            padding-bottom: 0px; */
+        }
+
+        #bottom_btn1 {
+            margin-left: 10px;
+            color: #6f6f6f;
+            font-weight: bold;
+            background-color: white;
+            font-family: 'HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif';
+            border-radius: 5px;
+            ;
+            border: 1px solid white;
+            height: 25px
+        }
+
+        #bottom_btn1:hover {
+            background-color: whitesmoke
+        }
+
+        #bottom_btn2 {
+            margin-right: 10px;
+            height: 25px;
+            border-radius: 5px;
+            color: white;
+            background-color: #6730ce;
+            font-weight: bolder;
+
+        }
+
+        #rating {
+            display: flex;
+            /* border:2px solid red; */
+            margin-top: -5px;
+            /* font-size: 20px; */
+            /* line-height: 0px; */
+            color: #6730ce;
+            font-family: 'HTGFellix, Inter, "Helvetica Neue", Helvetica, sans-serif';
+
+        }
+
+        #available {
+            font-size: 13px;
+            color: rgb(5, 5, 5);
+            margin-top: -15px;
+        }
+
+        #city_img {
+            height: 100%;
+            width: 100%;
+        }
+
+        #wish {
+            border: none;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="https://www.hometogo.com/assets/logo/logo-color.svg" alt=""></a>
+        </div>
+        <div class="location">
+            <p id="nav_City"><i class="fa-thin fa-magnifying-glass"></i></p>
+        </div>
+        <div class="date">
+            <p id="nav_Date"><i class="fa-solid fa-calendar-days"></i> 12/03/25</p>
+        </div>
+        <div class="guest">
+            <p id="nav_Preferance"><i class="fa-solid fa-user"></i> Adult</p>
+        </div>
+        <div class="otherPages">
+            
+           
+            <button class="wish" id="wishp"> <i class="fa-solid fa-heart"></i> Wish Lists</button>
+            <div class="myAccount">
+                <p><a href="yourAccount.html">My Account</a></p>
+            </div>
+        </div>
+    </div>
+
+
+       <!-- navbar completed -->
+       <div id="center">
+
+        <div class="top">
+            <div class="navbar2">
+
+
+                <div class="price">
+
+                    <select id="price" onchange="handlePriceSort()">
+                        <option value="">select price</option>
+                        <option value="lth">Low to High</option>
+                        <option value="htl">High to Low</option>
+                    </select>
+                </div>
+
+                <div class="rating">
+                    <select name="" id="rating">
+                        <option value="--">select rating</option>
+                        <option value="lth">Low to High</option>
+                        <option value="htl">High to Low</option>
+                    </select>
+                </div>
+
+                <div class="location">
+                    <select name="" id="location" onchange="locationchange()">
+                        <option value="">select location</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Hydrabad">Hydrabad</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Delhi">Delhi</option>
+                    </select>
+                </div>
+
+                
+                <div class="filter">All filters</div>
+
+            </div>
+
+            <div id="left"> </div>
+        </div>
+        <!-- nav and left page are in same div and ccompleted here -->
+        <div id="right"></div>
+    </div>
+
+</body>
+
+</html>
+
